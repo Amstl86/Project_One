@@ -748,8 +748,8 @@ margin-bottom: 13px;
     width: 28px;
     height: 28px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-left: 6px;
     border-radius: 50%;
     background: #E3B873;
     margin: 0 15px;
@@ -758,20 +758,11 @@ margin-bottom: 13px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    padding: 0 20px;
     padding-bottom: 66px;
-}
-.contacts-dark {
-    position: relative;
-}
-.contacts-overlay {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, .7);
-    z-index: 1;
+    max-width: 900px;
+
+
 }
 
 
@@ -986,7 +977,7 @@ margin-bottom: 13px;
         background: #000;
     }
     iframe {
-        width: 300px;
+        max-width: 300px;
         height: 250px;
         margin: 0 auto;
     }
