@@ -229,6 +229,7 @@ h1 span {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .line {
     display: block;
@@ -246,6 +247,7 @@ h1 span {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 .oneline {
     width: 55px;
@@ -262,7 +264,10 @@ h1 span {
     margin: 0 auto;
     margin-bottom: 62px;
 }
-
+.control-video {
+    width: 840px;
+    height: 472.5px;
+}
 .img-video {
     width: 100%;
     height: auto;
@@ -891,6 +896,10 @@ margin-bottom: 13px;
         margin-left: 45%;
         margin-top: -38%;
         margin-bottom: 243px;
+    }
+    .control-video {
+        width: 300px;
+        height: 250px;
     }
     .control p {
         max-width: 340px;
