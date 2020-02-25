@@ -43,8 +43,10 @@
                         with work time saving up to 45 days and 20% from cost of materials
                          due to the organizaton of work
                     </p>
-                    <button class="button main-page__button">Calculate the cost</button>
-                    <button class="button main-page__button main-page__button_transparent">Submit your application</button>
+                    <div class="main-page-buttonblock">
+                        <button class="button main-page__button">Calculate the cost</button>
+                        <button class="button main-page__button main-page__button_transparent">Submit your application</button>
+                    </div>
                 </div>
             </div>
             <div class="main-page__overlay"></div>
@@ -60,7 +62,9 @@
                              on the side. For 14 years on in the construction<br>
                               market we have made happy more than 1000 families</p>
                         <div class="mobile-slider">
-                            <img class="mobile-slider__image" src="img/image-slider1.png" alt="Картинка">
+                            <div class="img-adaptive">
+                                <img class="mobile-slider__image" src="img/image-slider1.png" alt="Картинка">
+                            </div>
                             <div class="mobile-block">
                                 <div class="mobile-slider__control">
                                     <img src="./img/mobile-slider-left.svg" alt="Стрелка">
@@ -116,7 +120,7 @@
                             <li><a href="#">Rostov-on-don, Patriotic</a></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="works__image__responsive">
                         <img src="img/chear.jpg" alt="Image">
                     </div>
                 </div>
@@ -140,8 +144,10 @@
                     </div>
                 </div>
             </div>
-            <iframe class="control-video" src="https://www.youtube.com/embed/SonADs_4Two?start=11" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <!--<div class="control__img">
+            <div class="video-block">
+                <iframe class="control-video" src="https://www.youtube.com/embed/SonADs_4Two?start=11" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+                <!--<div class="control__img">
                 <div>
                     <img class="img-video" src="img/video.png" alt="Видео">
                     <div class="control__img-icon">
@@ -166,9 +172,11 @@
                     <input class="input input__paddingtop" type="text" placeholder="Your phone number:">
                 </div>
                 <button class="button control__button">Sabmit</button>
+                <div class="control__form-checkbox">
+                    <input type="checkbox" class="checkbox" id="consent">
+                    <label class="label-checkbox" for="consent">I agree to the processing of personal data</label>
+                </div>
             </form>
-            <input type="checkbox" class="checkbox" id="consent">
-            <label class="label-checkbox" for="consent">I agree to the processing of personal data</label>
     </section>
     <!------------------------------------------------REPAIR------------------------------------------------->
     <section class="repair">
@@ -453,17 +461,17 @@
             <h2 class="title questions-title">Have any questions?</h2>
             <form class="questions__form">
                 <div class="input-row">
-                    <div class="form-input">
-                        <label class="label white-text">Name</label>   
+                    <div class="form-input questions-form-input">
+                        <label class="label questions-label">Name</label>   
                         <input class="input questions-input white-text" type="text" placeholder="What is your name:">
                     </div>
-                    <div class="form-input">
-                        <label class="label white-text">Phone</label>
+                    <div class="form-input questions-form-input">
+                        <label class="label questions-label">Phone</label>
                         <input class="input questions-input white-text" type="text" placeholder="Your phone number:">
                     </div>
                 </div>
-                <div class="form-input">
-                    <label class="label white-text">Question</label>
+                <div class="form-input questions-form-input">
+                    <label class="label questions-label">Question</label>
                     <input class="input questions-input white-text" type="text" placeholder="I want to know:">
                 </div>
                 <div class="questions-checkbox">

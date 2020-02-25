@@ -16,6 +16,7 @@ body {
     background: #E3B873;
     border-radius: 2px;
     border: none;
+    cursor: pointer;
 }
 h1, h2, h3 {
     font-family: Yeseva One, serif;
@@ -218,6 +219,9 @@ h1 span {
     text-decoration: underline;
     color: #e3b873;
 }
+.img-adaptive {
+    max-width: 600px;
+}
 
 /*------------------------------------------------CONTROL-------------------------------------------*/
 .control {
@@ -264,6 +268,9 @@ h1 span {
     margin: 0 auto;
     margin-bottom: 62px;
 }
+.video-block iframe{
+    max-width: 100%;
+}
 .control-video {
     width: 840px;
     height: 472.5px;
@@ -296,7 +303,8 @@ h1 span {
 }
 .control__form {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: flex-end;
     box-sizing: border-box;
     max-width: 770px;
@@ -308,6 +316,8 @@ h1 span {
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-right: 40px;
+    margin-bottom: 63px;
 }
 .label {
     font-size: 13px;
@@ -326,7 +336,7 @@ h1 span {
     font-style: normal;
     font-size: 13px;
     padding: 20px 75px;
-    margin-bottom: 0;
+    margin-bottom: 63px;
 }
 .checkbox {
     display: none;
@@ -362,6 +372,7 @@ h1 span {
     justify-content: space-between;
 }
 .repair__image {
+    max-width: 100%;
     position: relative;
     z-index: -1;
 }
@@ -708,8 +719,8 @@ margin-bottom: 13px;
 .questions input::placeholder {
     color: #fff;
 }
-.questions label {
-    color: #fff;
+.questions-label {
+    color: rgba(255, 255, 255, 0.5);
 }
 .questions-checkbox {
     margin-top: 48px;
@@ -790,6 +801,14 @@ margin-bottom: 13px;
     .our-styles, .advantages, .benefit, .clients, footer, nav, .works__image, .works__slider-controls {
         display: none;
     }
+    .button {
+        max-width: 340px;
+        max-height: 50px;
+        display: flex;
+        align-items: center;justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
     /*--------------------------------------HEADER---------------------*/
     .header {
         height: 57px;
@@ -806,17 +825,23 @@ margin-bottom: 13px;
         padding-bottom: 61px;
         margin: 0 auto;
     }
+    .main-page-buttonblock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main-page__button {
+        width: 100%;
+        margin: 0 auto;
+    }
     .main-page__button_transparent {
-        margin-left: 0;
         margin-top: 26px;
     }
     .main-page__content p {
         font-size: 14px;
         line-height: 19px;
     }
-    .main-page__button {
-        width: 100%;
-    }
+    
     h1 {
         font-size: 23px;
         line-height: 31px;
@@ -856,6 +881,9 @@ margin-bottom: 13px;
     }
     .mobile-slider {
         display: block;
+    }
+    .mobile-slider img {
+        max-width: 100%;
     }
     .mobile-block {
         margin: 0 auto;
@@ -925,18 +953,20 @@ margin-bottom: 13px;
         margin-bottom: 50px;
     }
     .control__button {
-        margin-left: 20px;
-        margin-bottom: -50px;
-        padding: 20px 124px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -25px;
+        width: 340px;
+        padding: 20px 0;
+        order: 1;
     }
     .label-checkbox {
         display: block;
         font-size: 14px;
         color: #fff;
-        margin-top: -150px;
         margin-left: 0;
         padding-bottom: 60px;
-        padding-top: 60px;
     }
 
      /*--------------------------------------REPAIR---------------------*/
@@ -992,7 +1022,15 @@ margin-bottom: 13px;
     .form-input {
         margin-left: 18px;
     }
+    .questions-form-input {
+        margin-bottom: 0;
+    }
+    .questions-checkbox {
+        margin: 0;
+    }
+    
     .questions-btn {
+        margin: 0 auto;
         padding: 18px 144px;
     }
     .contacts {
