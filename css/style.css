@@ -727,6 +727,9 @@ margin-bottom: 13px;
     margin-bottom: 30px;
     font-size: 14px;
 }
+.label-white {
+    color: #fff;
+}
 .questions-btn {
     font-style: normal;
     padding: 20px 65px;
@@ -967,6 +970,7 @@ margin-bottom: 13px;
         color: #fff;
         margin-left: 0;
         padding-bottom: 60px;
+
     }
 
      /*--------------------------------------REPAIR---------------------*/
