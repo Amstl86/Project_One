@@ -17,7 +17,7 @@
                 <div class="header__logo">
                     <img src="img/logo.svg" alt="Логотип">
                 </div>
-                <nav>
+                <nav class="header__nav">
                     <ul class="header__list">
                         <li><a class="header__nav-link" href="#">Home</a></li>
                         <li><a class="header__nav-link" href="#">Projects</a></li>
@@ -54,74 +54,72 @@
     <!-----------------------------------------WORKS----------------------------------------------------->
     <section class="works">
         <div class="container">
-            <div class="works__wrap">
-                <div class="works__text">
-                    <h2 class="title works__title">Completed projects</h2>
-                    <div class="works__slider">
-                        <p class="works__slider-description">Only a small part of the work performed by our company is presented<br>
-                             on the side. For 14 years on in the construction<br>
-                              market we have made happy more than 1000 families</p>
-                        <div class="mobile-slider">
-                            <div class="img-adaptive">
-                                <img class="mobile-slider__image" src="img/image-slider1.png" alt="Картинка">
+            <div class="slider">
+                <div class="works-title-mobile">
+                    <h2>Completed projects</h2>
+                    <p>Only a small part of the work by our company is presented on
+                        the site. For 14 years on in the construction market we have made happy more than
+                        1000 families
+                    </p>
+                </div>
+                <div class="block-text">
+                    <h2 class="block-text__title">Completed projects</h2>
+                    <p class="block-text__subtitle">Only a small part of the work by our company is presented on
+                        the site. For 14 years on in the construction market we have made happy more than
+                        1000 families
+                    </p>
+                    <div class="block-parametrs">
+                        <div class="parametrs-items">
+                            <div class="parametrs-item">
+                                <h2 class="parametrs-item__title">City:</h2>
+                                <p class="parametrs-item__subtitle" id="slide-city">Rostov-on-Don LCD admiral</p>
                             </div>
-                            <div class="mobile-block">
-                                <div class="mobile-slider__control">
-                                    <img src="./img/mobile-slider-left.svg" alt="Стрелка">
-                                </div>
-                                <div class="mobile-slider__control">
-                                    <img src="./img/mobile-slider-right.svg" alt="Стрелка">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider">
-                            <div class="works-parameters">
-                                <div>
-                                    <h3>City:</h3>
-                                    <p>Rostov-on-don<br>
-                                    LCD admiral</p>
-                                </div>
-                                <div>
-                                    <h3>Repair time:</h3>
-                                    <p>3.5 months</p>
-                                </div>
-                            </div>
-                            <div class="works-parameters">
-                                <div>
-                                    <h3>Repair cost:</h3>
-                                    <p>Upon request</p>
-                                </div>
-                                <div>
-                                    <h3>Repair cost:</h3>
-                                    <p>Upon request</p>
-                                </div>
+                            <div class="parametrs-item">
+                                <h2 class="parametrs-item__title">Repair time:</h2>
+                                <p class="parametrs-item__subtitle" id="slide-time">3.5 months</p>
                             </div>
                         </div>
-                        <div class="works__slider-controls">
-                            <div>
-                                <a href="#"><img src="img/slider1.svg" alt="Стрелка"></a>
+                        <div class="parametrs-items">
+                            <div class="parametrs-item">
+                                <h2 class="parametrs-item__title">Apartament area:</h2>
+                                <p class="parametrs-item__subtitle" id="slide-area">81 m2</p>
                             </div>
-                            <div class="works__slider-points">
-                                <a href="#"><span class="works__slider-point"></span></a>
-                                <a href="#"><span class="works__slider-point"></span></a>
-                                <a href="#"><span class="works__slider-point"></span></a>
+                            <div class="parametrs-item">
+                                <h2 class="parametrs-item__title">Repair cost:</h2>
+                                <p class="parametrs-item__subtitle" id="slide-cost">Upon request</p>
                             </div>
-                            <div>
-                                <a class="works__slider-arrow" href="#"><img src="img/slider2.svg" alt="Стрелка"></a>
-                            </div>
-                        </div> 
+                        </div>
+                    </div>
+                    <div class="slider-control">
+                        <a class="arrow-left">
+                            <img src="./img/slider1.svg" alt="стрелка">
+                        </a>
+                        <div class="dots">
+                            <div class="dots__item" data-id="0"></div>
+                            <div class="dots__item" data-id="1"></div>
+                            <div class="dots__item" data-id="2"></div>
+                        </div>
+                        <a class="arrow-right">
+                            <img src="./img/slider2.svg" alt="стрелка">
+                        </a>
                     </div>
                 </div>
-                <div class="works__image">
-                    <div class="works__nav">
-                        <ul>
-                            <li><a href="#">Rostov-on-don, Admiral</a></li>
-                            <li><a href="#">Sochi thieves</a></li>
-                            <li><a href="#">Rostov-on-don, Patriotic</a></li>
+                <div class="block-image">
+                    <div class="navigation">
+                        <ul class="navigation__list">
+                            <li class="list-item"><a class="list-item__link" data-id="0">Rostov-on-don, admiral</a></li>
+                            <li class="list-item"><a class="list-item__link" data-id="1">Sochi thieves</a></li>
+                            <li class="list-item"><a class="list-item__link" data-id="2">Rostov-on-Don patriotic</a></li>
                         </ul>
                     </div>
-                    <div class="works__image__responsive">
-                        <img src="img/chear.jpg" alt="Image">
+                    <div class="slider-image">
+                        <img id="slide-image" src="">
+                        <a class="arrow-left arrow-left_mobile">
+                            <img src="./img/mobile-slider-left.svg" alt="стрелка">
+                        </a>
+                        <a class="arrow-right arrow-right_mobile">
+                            <img src="./img/mobile-slider-right.svg" alt="стрелка">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -255,21 +253,7 @@
             </div>
         </div>
     </section>
-    <!------------------------------------------------FOR-MOBILE------------------------------------------------->
-    <section class="for-mobile">
-        <h2 class="title our-styles__text-title">We realize your wildest fantasies</h2>
-        <div class="mobile-slider">
-            <img class="mobile-slider__image" src="img/livingroom.jpg" alt="Картинка">
-            <div class="mobile-block">
-                <div class="mobile-slider__control">
-                    <img src="./img/mobile-slider-left.svg" alt="Стрелка">
-                </div>
-                <div class="mobile-slider__control">
-                    <img src="./img/mobile-slider-right.svg" alt="Стрелка">
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <!------------------------------------------------ADVANTAGES------------------------------------------------->
     <section class="advantages">
         <div class="container">
@@ -511,7 +495,7 @@
                 <div class="header__logo">
                     <img src="img/logo.svg" alt="Логотип">
                 </div>
-                <nav>
+                <nav class="header__nav">
                     <ul class="header__list">
                         <li><a class="header__nav-link" href="#">Home</a></li>
                         <li><a class="header__nav-link" href="#">Projects</a></li>
@@ -526,5 +510,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
